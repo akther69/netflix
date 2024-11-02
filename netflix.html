@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html,body{
+                background-image: url(./assets/images/netflix_backcover.jpg);
+                height: 750px;
+                background-image: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(/assets/images/netflix_backcover.jpg);
+                background-size: 100% 750px;
+                background-color:black ;
+                background-repeat: no-repeat;
+                
+        }
+        #img1{
+            margin-top: 10px;
+            margin-left: 150px;
+            height: 60px;
+            width: 200px;
+
+        }
+        #div1{
+            border-bottom: 5px solid rgb(72, 64, 64);
+            background-size: cover;
+            background-position: center;
+            background-repeat:no-repeat;
+            height: 750px;
+        }
+        select{
+            background-color: rgb(33, 32, 32);
+            color: white;
+            height: 30px;
+            width: 100px;
+            float: right;
+            padding-right: 10px;
+            border:1px solid white;
+            border-radius: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        input[type="submit"]{
+            float: right;
+            background-color: red;
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 30px;
+            margin-right: 80px;
+            margin-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input[type="email"]{
+            padding: 5px;
+            width: 250px;
+            height: 40px;
+            background: transparent;
+        }
+        h1{
+            color:white;
+            size: 20px;
+            font-size: 50px;
+        }
+        h2,h3{
+            color: white;
+            font-size: 10px;
+        }
+        #div4{
+            margin-top: 250px;
+        }
+        button[type="button"] {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            height: 40px;
+            padding: 0 15px;
+            border: none;
+            font-size: medium;
+            border-radius: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+        }
+        #div3{
+            float: right;
+        }
+        .fa-solid{
+            color: white;
+            font-size: 10px;
+            margin-top: 3px;
+        }
+        #div2{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #email-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding-top: 10px;
+        }
+        button i {
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        #secondpage {
+            background-color: black;
+            height: 600px;
+            border-bottom: 5px solid rgb(72, 64, 64);
+            overflow: hidden;
+            position: relative;
+        }
+        #div7 {
+            width: 50%;
+            height: 500px;
+            color: white;
+            padding-top: 150px;
+            padding-left: 150px;
+            float: left;
+            box-sizing: border-box;
+            margin-top: 40px;
+        }
+        #div8 {
+            float: right;
+            width: 50%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin-top: 40px;
+        }
+        #imgtv {
+            height: 450px;
+            width: 600px;
+        }
+        #videocontainer{
+            margin-top: 60px;
+            position: relative;
+             background-image: url(./assets/images/secondslide_tv.jpg);
+             background-size: contain;
+             background-repeat: no-repeat;
+             width: 500px;
+             height: 400px;
+        }
+        video{
+            position: absolute;
+            top: 15%;
+            left: 13%;
+            width: 73%;
+            height: 60%;
+        }
+        #thirdpage{
+            background-color: black;
+            height: 750px;
+            border-bottom: 5px solid rgb(72, 64, 64);
+
+        }
+        #mb{
+            width: 40%;
+            height: 600px;
+            float: left;
+            background-image: url(./assets/images/mobileimg.jpg);
+            background-size: 700px 500px;
+            background-repeat: no-repeat;
+            margin-top: 100px;
+        }
+        #text{
+            width: 60%;
+            margin-top: 300px;
+            margin-right: 80px;
+            color: white;
+            float: right;
+            width: 50%;
+        }
+        #box{
+            height: 80px;
+            width: 350px;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+            margin-top: 360px;
+            margin-left: 173px;
+            background-color: black;
+            padding-bottom: 5px;
+        }
+        #boxinsideimg{
+            height: 70px;
+            width: 70px;
+            float: left;
+            padding: 10px;
+        }
+        h4{
+            margin-left: 80px;
+        }
+        h5{
+            color: rgb(53, 53, 203);
+            margin-left: 80px;
+        }
+        .fa-solid{
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        #fourthpage{
+            width: 100%;
+            height: 512px;
+            background-color: black;
+            margin-top: 60px;
+            border-bottom: 5px solid red;
+        }
+        #acco{
+          width: 800px;
+          background-color: black;
+          margin-top: 20px;
+        }
+        .accordion-body{
+          background-color: black;
+          color:white
+        }
+        .accordion-button::after {
+          filter:invert(1);
+        }
+        #secondemail{
+            margin-top: 50px;
+        }
+        #footer{
+            color: white;
+        }
+        .container a{
+            color: white;
+            display: block;
+        }
+        #fifthpage{
+            height: 400px;
+        }
+        
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/248f55b135.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+</head>
+<body>
+    <!-- First page -->
+    <div id="div1">
+        <div id="div2"><img id="img1" src="./assets/images/netflix_logo1.jpg">
+            <form>
+        <input type="submit" value="Sign In">
+        <select name="language" style="margin-top: 20px;">
+            <option>English</option>
+            <option>हिंदी</option></select>
+            </form></div>
+            <div id="div4">
+                <center><h1><b>Unlimited movies,TV shows and more</b></h1>
+                <h2>Watch anywhere.Cancel anytime.</h2>
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+        <form id="email-form"><input type="email" placeholder="Email Address"><button type="button">Get Started<i class="fa-solid fa-greater-than"></i></button></form></center></div></div>
+    </div>
+    <!-- SECOND PAGE -->
+    <div id="secondpage">
+        <div id="div7">
+            <h1><b>Enjoy on your TV</b></h1>
+            <h2>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more</h2>
+        </div>
+        <div id="div8">
+            <div id="videocontainer">
+            <video controls height="600px" width="300px" autoplay="" loop="" muted=""><source src="./assets/videos/netflix_video.mp4"></video></div>
+        </div>
+    </div>
+    <!-- THIRD PAGE -->
+    <div id="thirdpage">
+        <div id="left"><div id="mb"><div id="box"><img id="boxinsideimg" src="/assets/images/third_slide_image_inside.jpg">
+            <h4>Stranger Things<i class="fa-solid fa-download"></i></h4>
+        <h5>Downloading...</h5></div></div>
+    </div>
+        <div id="text"><div id="div9"><h1><b>Download your shows to watch offline</b></h1>
+            <h3>Save your favourites easily and always have something to watch</h3></div></div>
+     </div>
+     <!-- fourth page -->
+   <section>
+    <div id="fourthpage" align="center">
+      <div id="fourth"><h1><b>Frequently Asked Question</b></h1></div>
+      <div id="acco">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is Netflix?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" align="justify">Netflix is a streaming service that offers a wide variety of TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. It allows subscribers to watch content without commercials, with new titles added regularly.</div>
+            </div>
+          </div>
+          <br>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How much does Netflix cost?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" align="justify">Netflix offers plans ranging from ₹149 to ₹649 per month, with options including Mobile, Basic, Standard, and Premium plans, each providing different levels of streaming quality and number of simultaneous screens.</div>
+            </div>
+          </div>
+          <br>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What can i watch on Netflix?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" align="justify">On Netflix, you can watch a wide array of content including popular TV shows, movies, documentaries, anime, and original series across various genres. The platform frequently updates its library with new titles and exclusive releases.</div>
+            </div>
+          </div>
+          <br>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                Where can i watch?
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" align="justify">You can watch Netflix on a variety of devices, including smart TVs, smartphones, tablets, laptops, and streaming devices like Roku, Apple TV, and Amazon Fire Stick. Additionally, you can stream Netflix through gaming consoles such as PlayStation and Xbox.</div>
+            </div>
+          </div>
+        </div>
+        <div id="secondemail"><h6 style="color: white;">Ready to watch?Enter your email to create or restart your membership</h6><form id="email-form"><input type="email" placeholder="Email Address"><button type="button">Get Started<i class="fa-solid fa-greater-than"></i></button></form></div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- fifth page -->
+    <div id="fifthpage">
+   <div class="container my-5">
+    <div class="row" id="footer">
+        <div class="col-2 text-center">
+        </div>
+        <div class="col-2 text-center">
+            Questions?<a href=""> Call 000-800-919-1694</a><br>
+            <a href="">FAQ</a><br>
+            <a href="">Investor Relations</a><br>
+            <a href="">Privacy</a><br>
+            <a href="">Speed Test</a><br>
+            Netflix India
+        </div>
+        <div class="col-2 text-center">
+            <a href="">Help Centre</a><br>
+            <a href="">Jobs</a><br>
+            <a href="">Cookie Preferences</a><br>
+            <a href="">Legal Notices</a><br>
+        </div>
+        <div class="col-2 text-center">
+            <a href="">Account</a><br>
+            <a href="">Ways to Watch</a><br>
+            <a href="">Corporate Information</a><br>
+            <a href="">Only on Netflix</a><br>
+        </div>
+        <div class="col-2 text-center">
+            <a href="">Media Centre</a><br>
+            <a href="">Terms of Use</a><br>
+            <a href="">Contact Us</a><br>
+        </div>
+        <div class="col-2 text-center">
+        </div>
+    </div>
+ </div>
+</div>
+</body>
+</html>
